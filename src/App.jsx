@@ -4,6 +4,13 @@ import { MapPin, LayoutDashboard, BookOpen, Home } from 'lucide-react';
 import LandingPage from './pages/LandingPage';
 import Dashboard from './pages/Dashboard';
 import Journal from './pages/Journal';
+import GameQuake from "./pages/GameQuake";
+import GameHealing from "./pages/GameHealing";
+import GameAdventure from "./pages/GameAdventure";
+import RoleplayPsy from "./pages/RoleplayPsy";
+import TeleScreening from "./pages/TeleScreening";
+import AiCompanion from "./pages/AiCompanion";
+import MoodFoodAnalyzer from "./pages/MoodFoodAnalyzer";
 
 export const CultureContext = createContext();
 
@@ -50,6 +57,13 @@ function App() {
             <Route path="/" element={<LandingPage />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/jurnal" element={<Journal />} />
+            <Route path="/game-quake" element={<GameQuake />} />
+            <Route path="/game-healing" element={<GameHealing />} />
+            <Route path="/game-adventure" element={<GameAdventure />} />
+            <Route path="/roleplay" element={<RoleplayPsy />} />
+            <Route path="/tele-screening" element={<TeleScreening />} />
+            <Route path="/ai-companion" element={<AiCompanion />} />
+            <Route path="/mood-food" element={<MoodFoodAnalyzer />} />
           </Routes>
         </div>
       </BrowserRouter>
