@@ -125,6 +125,6 @@ Gunakan bahasa Indonesia yang hangat, suportif, dan tidak menghakimi.
 // ================= START SERVER =================
 const PORT = 5000;
 
-app.listen(PORT, "0.0.0.0", () => {
+app.listen(PORT, "5000", () => {
   console.log(`✅ Server is live on port ${PORT}`);
 });
