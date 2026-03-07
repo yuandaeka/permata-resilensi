@@ -16,7 +16,12 @@ if (!process.env.GEMINI_API_KEY) {
 const app = express();
 
 // 🔥 allow big base64 uploads
-app.use(cors());
+app.use(cors({
+  origin: "http://localhost:5173",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"]
+}));
+
 app.use(express.json({ limit: "20mb" }));
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
@@ -98,7 +103,7 @@ Jika berupa dokumen:
 - Ringkas secara singkat
 - Hubungkan dengan kesadaran emosional
 
-Gunakan bahasa Indonesia yang hangat, suportif, dan tidak menghakimi.
+Gunakan bahasa Indonesia yang hangat, suportif, dan tidak menghakimi serta buat yang tidak terlalu panjang.
 `
             },
             {
@@ -123,7 +128,7 @@ Gunakan bahasa Indonesia yang hangat, suportif, dan tidak menghakimi.
 });
 
 // ================= START SERVER =================
-const PORT = 5000;
+const PORT = 5050;
 
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`✅ Server is live on port ${PORT}`);

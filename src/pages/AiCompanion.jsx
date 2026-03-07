@@ -49,7 +49,7 @@ const AiCompanion = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/chat", {
+      const response = await fetch("http://localhost:5050/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: input })
@@ -87,7 +87,7 @@ const AiCompanion = () => {
           <div
             key={index}
             className={`mb-4 ${
-              msg.role === "user"
+              msg.role === "user" 
                 ? "text-right"
                 : "text-left"
             }`}

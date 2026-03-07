@@ -43,7 +43,7 @@ export default function MoodFoodAnalyzer() {
     setResponse("");
 
     try {
-      const res = await fetch("http://localhost:5000/api/mood-food", {
+      const res = await fetch("http://localhost:5050/api/mood-food", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ mood, file: fileData }),
