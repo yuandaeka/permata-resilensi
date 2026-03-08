@@ -274,7 +274,7 @@ const Dashboard = () => {
             <div className="bg-white p-10 rounded-[3rem] shadow-md hover:shadow-2xl transition-all border border-black/5 cursor-pointer hover:-translate-y-2 duration-300">
               <h4 className="text-xl font-black mb-3">Story of Strength</h4>
               <p className="text-xs opacity-50 font-bold uppercase tracking-wider italic">
-                Cerita Ketangguhan Penyintas
+                Cerita Ketangguhan Penyintas 
               </p>
             </div>
           </Link>
