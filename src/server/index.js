@@ -26,12 +26,12 @@ app.use(express.json({ limit: "20mb" }));
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-// ================= HEALTH CHECK =================
+// = HEALTH CHECK =
 app.get("/", (req, res) => {
   res.send("Server is running ✅");
 });
 
-// ================= CHAT ENDPOINT =================
+// = CHAT ENDPOINT =
 app.post("/api/chat", async (req, res) => {
   try {
     const { message } = req.body;

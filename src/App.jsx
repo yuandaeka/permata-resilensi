@@ -11,6 +11,7 @@ import RoleplayPsy from "./pages/RoleplayPsy";
 import TeleScreening from "./pages/TeleScreening";
 import AiCompanion from "./pages/AiCompanion";
 import MoodFoodAnalyzer from "./pages/MoodFoodAnalyzer";
+import GameBreathing from "./pages/GameBreathing";
 
 
 export const CultureContext = createContext();
@@ -65,6 +66,7 @@ function App() {
             <Route path="/tele-screening" element={<TeleScreening />} />
             <Route path="/ai-companion" element={<AiCompanion />} />
             <Route path="/mood-food" element={<MoodFoodAnalyzer />} />
+            <Route path="/game-breath" element={<GameBreathing />} />
           </Routes>
         </div>
       </BrowserRouter>

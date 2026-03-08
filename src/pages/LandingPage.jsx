@@ -26,7 +26,7 @@ const LandingPage = () => {
           </button>
         </motion.div>
 
-        {/* --- REVISI BAGIAN GAMBAR --- */}
+        {/*REVISIO GAMBAR */}
         <div className="bg-gray-400 aspect-[4/5] rounded-[5rem] overflow-hidden shadow-2xl border-[16px] border-white relative">
           <img 
             src={permataImg} 

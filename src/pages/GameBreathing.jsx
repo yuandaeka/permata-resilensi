@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Gamepad2, ArrowRight } from "lucide-react";
 
-const GameHealing = () => {
+const GameBreathing = () => {
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center p-6">
       <motion.div 
@@ -22,17 +22,17 @@ const GameHealing = () => {
             Disaster Ready Game
           </h1>
           <p className="text-sm opacity-50 font-bold uppercase tracking-widest italic">
-            Pick & Drop Emergency Bag
+            Latihan Pernafasan
           </p>
         </div>
 
         <p className="text-gray-600 font-medium">
-          Pilih barang penting dan masukkan ke dalam tas darurat sebelum bencana datang!
+          Tenangkan diri anda, ikuti latihan pernafasan secara perlahan!
         </p>
 
         {/* LINK KE GAME */}
         <a 
-          href="/PickAndDrop.html"
+          href="/Breathing.html"
           className="flex items-center justify-center gap-3 w-full bg-black text-white py-6 rounded-[2rem] font-black text-xl hover:bg-green-600 transition-all group"
         >
           Mainkan Game
@@ -52,4 +52,4 @@ const GameHealing = () => {
   );
 };
 
-export default GameHealing;
+export default GameBreathing;

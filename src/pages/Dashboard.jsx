@@ -216,9 +216,9 @@ const Dashboard = () => {
 
           <Link to="/game-healing">
             <div className="bg-white p-10 rounded-[3rem] shadow-md hover:shadow-2xl transition-all border border-black/5 cursor-pointer hover:-translate-y-2 duration-300">
-              <h4 className="text-xl font-black mb-3">Pulih Bersama</h4>
+              <h4 className="text-xl font-black mb-3">Pinch and Drop</h4>
               <p className="text-xs opacity-50 font-bold uppercase tracking-wider italic">
-                Rebuilding & Trauma Recovery
+                Prepare before disaster
               </p>
             </div>
           </Link>
@@ -239,6 +239,42 @@ const Dashboard = () => {
               </h4>
               <p className="text-xs opacity-70 font-bold uppercase tracking-wider italic">
                 Simulasi Mental & Growth Path
+              </p>
+            </div>
+          </Link>
+
+          <Link to="/game-memory">
+            <div className="bg-white p-10 rounded-[3rem] shadow-md hover:shadow-2xl transition-all border border-black/5 cursor-pointer hover:-translate-y-2 duration-300">
+              <h4 className="text-xl font-black mb-3">Pulih Bersama</h4>
+              <p className="text-xs opacity-50 font-bold uppercase tracking-wider italic">
+                BUILDING & TRAUMA RECOVERY
+              </p>
+            </div>
+          </Link>
+
+          <Link to="/game-focus">
+            <div className="bg-white p-10 rounded-[3rem] shadow-md hover:shadow-2xl transition-all border border-black/5 cursor-pointer hover:-translate-y-2 duration-300">
+              <h4 className="text-xl font-black mb-3">Focus Builder</h4>
+              <p className="text-xs opacity-50 font-bold uppercase tracking-wider italic">
+                Melatih Konsentrasi Mental
+              </p>
+            </div>
+          </Link>
+
+          <Link to="/game-breath">
+            <div className="bg-white p-10 rounded-[3rem] shadow-md hover:shadow-2xl transition-all border border-black/5 cursor-pointer hover:-translate-y-2 duration-300">
+              <h4 className="text-xl font-black mb-3">Breathing Calm</h4>
+              <p className="text-xs opacity-50 font-bold uppercase tracking-wider italic">
+                Latihan Nafas Anti Stress
+              </p>
+            </div>
+          </Link>
+
+          <Link to="/game-story">
+            <div className="bg-white p-10 rounded-[3rem] shadow-md hover:shadow-2xl transition-all border border-black/5 cursor-pointer hover:-translate-y-2 duration-300">
+              <h4 className="text-xl font-black mb-3">Story of Strength</h4>
+              <p className="text-xs opacity-50 font-bold uppercase tracking-wider italic">
+                Cerita Ketangguhan Penyintas
               </p>
             </div>
           </Link>
